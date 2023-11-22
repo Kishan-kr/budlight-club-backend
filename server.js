@@ -28,8 +28,13 @@ const httpServer = http.createServer(app);
 // instantiating socket io server 
 const io = new Server(httpServer, {
   pingTimeout: 60000,
+  // for development
+  // cors: {
+  //     origin: 'http://localhost:3000',
+  // }
+  // for production
   cors: {
-      origin: 'http://localhost:3000',
+      origin: 'https://budlight-club-backend.onrender.com',
   }
 });
 
