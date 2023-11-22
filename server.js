@@ -34,7 +34,7 @@ const io = new Server(httpServer, {
   // }
   // for production
   cors: {
-      origin: 'https://budlight-club-backend.onrender.com',
+      origin: 'https://budlight-club.netlify.app',
   }
 });
 
